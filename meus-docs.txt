@@ -1,0 +1,15 @@
+React-Navigation
+yarn add @react-navigation/native
+se usar o Expo também de executar esta dependências.
+expo install react-native-screens react-native-safe-area-context
+yarn add @react-navigation/stack
+yarn add @react-navigation/native-stack
+yarn add react-native-gesture-handler
+
+React Native Elements
+yarn add react-native-elements
+yarn add react-native-vector-icons
+
+
+Avatar utilizar:
+https://pixabay.com/pt/images/search/avatar/
