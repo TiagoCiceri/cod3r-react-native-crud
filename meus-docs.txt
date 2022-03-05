@@ -10,6 +10,9 @@ React Native Elements
 yarn add react-native-elements
 yarn add react-native-vector-icons
 
+# yarn
+yarn && yarn add react-native-elements
+yarn add @expo/vector-icons --save
 
 Avatar utilizar:
 https://pixabay.com/pt/images/search/avatar/

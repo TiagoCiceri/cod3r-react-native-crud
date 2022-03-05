@@ -4,43 +4,46 @@ import { createStackNavigator } from '@react-navigation/stack'
 import UserList from './scr/views/UserList';
 import UserForm from './scr/views/UserForm';
 import { Button, Icon } from 'react-native-elements'
+import { UsersProvider } from './scr/context/UsersContext'
 
 const Stack = createStackNavigator()
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <Stack.Navigator
-        initialRouteName='UserList'
-        screenOptions={screenOptions}>
+    <UsersProvider>
+      <NavigationContainer>
+        <Stack.Navigator
+          initialRouteName='UserList'
+          screenOptions={screenOptions}>
 
-        <Stack.Screen
-          name="UserList"
-          component={UserList}
-          options={({ navigation }) => {
-            return {
-              title: "Lista de Usuário",
-              headerRight: () => (
-                <Button
-                  onPress={() => navigation.navigate("UserForm")}
-                  type="clear"
-                  icon={<Icon name="add" size={25} color="white" />}
-                />
-              )
-            }
-          }}
-        />
+          <Stack.Screen
+            name="UserList"
+            component={UserList}
+            options={({ navigation }) => {
+              return {
+                title: "Lista de Usuário",
+                headerRight: () => (
+                  <Button
+                    onPress={() => navigation.navigate("UserForm")}
+                    type="clear"
+                    icon={<Icon name="add" size={25} color="white" />}
+                  />
+                )
+              }
+            }}
+          />
 
-        <Stack.Screen
-          name="UserForm"
-          component={UserForm}
-          options={{
-            title: "Formulário de Usuário"
-          }}
-        />
+          <Stack.Screen
+            name="UserForm"
+            component={UserForm}
+            options={{
+              title: "Formulário de Usuário"
+            }}
+          />
 
-      </Stack.Navigator>
-    </NavigationContainer>
+        </Stack.Navigator>
+      </NavigationContainer>
+    </UsersProvider>
   );
 }
 
