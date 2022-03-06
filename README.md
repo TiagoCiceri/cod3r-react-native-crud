@@ -14,4 +14,4 @@ Estudos com desenvolvimento mobile
    - [x] Expo (Emulador direto no smartphone)
    - [x] Git / GitHub ( controle de versão )
    
-   
+   ![pixiz-CRUD2](https://user-images.githubusercontent.com/7707439/156931973-9711f1bf-6136-4309-82fe-04e0303a7d35.jpg)
