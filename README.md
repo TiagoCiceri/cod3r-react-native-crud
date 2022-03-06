@@ -5,6 +5,7 @@ Estudos com desenvolvimento mobile
 
 ### :gear: Tecnologia
    - [x] React Native
+      - [x]    Context API / hook useReducer
    - [x] React Navigation - reactnavigation.org
    - [x] React Native Vetor Icons - github.com/oblador/react-native-vector-icons
 
